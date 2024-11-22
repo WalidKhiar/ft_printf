@@ -16,8 +16,8 @@ OBJS=$(SRCS:.c=.o)
 all : $(NAME)
 
 $(NAME): $(LIBFT) $(OBJS)
-	ar rsc $(NAME) $(OBJS)
 	cp $(LIBFT_DIR)/$(LIBFT) $(NAME)
+	ar rsc $(NAME) $(OBJS)
 
 $(LIBFT):
 	make -C ./libft
